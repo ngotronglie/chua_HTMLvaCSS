@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- font roboto
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <section class="container">
+      <section class="banner">
+        <header>
+          <img src="./image/banner.jpg" width="100%" alt="" />
+        </header>
+        <section class="logo">
+          <canvas></canvas>
+        </section>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Landing</a></li>
+            <li><a href="#">shop</a></li>
+          </ul>
+        </nav>
+      </section>
+      <main>
+        <section class="post-top">
+          <section class="post-top-content">
+            <h2>EXPLORING THE SUBURB SINCE 2019</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
+              rerum facilis quasi dignissimos neque maxime voluptatem,
+              necessitatibus deserunt eum! Aliquid ducimus nisi quae corporis
+              distinctio. Laboriosam iusto ducimus tenetur molestiae.
+            </p>
+            <a href="#">Read more</a>
+          </section>
+          <img src="./image/img1.jpg" alt="" />
+        </section>
+
+        <h1>FEATURE BLOG POSTS</h1>
+
+        <section class="posts">
+          <section class="post-item">
+            <img src="./image/img2.jpg" alt="" />
+            <section class="sub">
+              <a href="#">BANFF NATIONAL PARK</a>
+              <section class="price">$456.00</section>
+              <a href="#" class="book">Book this tour</a>
+            </section>
+          </section>
+          <section class="post-item">
+            <img src="./image/img4.jpg" alt="" />
+            <section class="sub">
+              <a href="#">BANFF NATIONAL PARK</a>
+              <section class="price">$456.00</section>
+              <a href="#" class="book">Book this tour</a>
+            </section>
+          </section>
+          <section class="post-item">
+            <img src="./image/img4.jpg" alt="" />
+            <section class="sub">
+              <a href="#">BANFF NATIONAL PARK</a>
+              <section class="price">$456.00</section>
+              <a href="#" class="book">Book this tour</a>
+            </section>
+          </section>
+        </section>
+      </main>
+      <!-- end main -->
+      <footer>
+        <section class="copyright">.,mdfngd;dfgflgggljlkgjkldfjlkgklgd</section>
+        <form action="">
+          <input type="email" required placeholder="email address" />
+          <button type="submit">sent</button>
+        </form>
+      </footer>
+    </section>
+    <!-- end container -->
+    <script>
+      var canvas = document.querySelector("canvas");
+
+      //   thiet lap width va height
+      canvas.width = 200; //thiet lap width
+      canvas.height = 50; //thiet lap height
+      var ctx = canvas.getContext("2d"); // dinh dang canvas 2d
+      ctx.beginPath(); //bat dau
+      ctx.strokeStyle = "#02B0ED"; //ding kieu net ve
+      ctx.fillStyle = "#02B0ED"; //do mau ben trong
+      ctx.moveTo(0, 25); // toa do dinh dang con chuot o cai ve dau tien -- chu y viet hoa
+      ctx.lineTo(90, 0); // ve tu toa do moveTo den toa do tiep theo
+      ctx.lineTo(70, 25);
+      ctx.lineTo(90, 50);
+      ctx.lineTo(0, 25);
+      ctx.fill(); // do mau ben trong
+      ctx.stroke(); // ket thuc duong ve
+
+      ctx.beginPath(); // de ve mang ben kia va lam lai nhu tren
+      ctx.strokeStyle = "orange"; // ding kieu net ve
+      ctx.fillStyle = "orange"; //do mau ben trong
+      ctx.moveTo(110, 0);
+      ctx.lineTo(200, 25);
+      ctx.lineTo(110, 50);
+      ctx.lineTo(130, 25);
+      ctx.lineTo(110, 0);
+      ctx.fill(); // do mau ben trong
+      ctx.stroke(); // ket thuc duong ve
+    </script>
+  </body>
+</html>
